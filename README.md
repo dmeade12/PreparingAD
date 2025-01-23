@@ -1,30 +1,30 @@
-<p align="center"><img src="https://i.imgur.com/RPZ9Gws.png" height="50%" width="50%" alt="image"/>
-<h1>osTicket Prerequisites and Installation</h1>
+<p align="center"><img src="https://i.imgur.com/dXRfWvO.png height="50%" width="50%" alt="image"/>
+<h1>Preparing Directories Infastructure in Azure</h1>
 <p>This tutorial outlines the prerequisites and setup of preparing Directories Infastructure in Azure</p>
 
 <h3>*Environments and Technologies Used</h3>
 <p>Windows 11 Pro</p>
-<p>Internet Information Services (IIS)</p>
-<p>osTicket</p>
+<p>Microsoft Azure (Virtual Machines/Computer)</p>
+<p>Active Directory Domain Services</p>
+<p>Powershell</p>
 
 <h3>*Operating System Used</h3>
 <p>Windows 11 Pro (24H2)</p>
+<p>Windows Server 2022</p>
 
-<h3>*osTicket Installation Files</h3>
-<p>https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6</p>
 
-<h3>Download and Installation Steps</h3>
-<p>1. Downloaded the osTicket file from <i><b>"https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6"</b> </i> to my windows laptop, then extracted the osTicket files to my desktop</p>
-<p align="center"><img src="https://i.imgur.com/rszFcmo.png" height="50%" width="50%" alt="image"/>
+<p>1. Create a resource Group named "Active-Directory-Lab"</p>
+<p align="center"><img src="https://i.imgur.com/fRYxdUK.png> height="50%" width="50%" alt="image"/>
 
-<p>2. Install / Enable IIS in Windows WITH CGI - From the control panel, click on Turn windows features on and off. Then while on the Turn Windows on and off page, click on Internet Information Services(IIS), then expand the World Wide Web Services > Application Development Features, then select CGI.</p> 
-<p align="center"><img src="https://i.imgur.com/8Xmv5D3.png" height="50%" width="50%" alt="image"/>
+<p>2. Create a Virtual Network. Set the resource group to Active-Directory-Lab. Name the Virtual Network "Active-Directory-VNet" and set it to your region. Then we can review and create.</p> <p align="center"><img src="https://i.imgur.com/rK1k14D.png> height="50%" width="50%" alt="image"/>
 
-<p>3. From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)</p>
+<p>3. Create a Domain Controller VM (Windows Server 2022) named "DC-1" When creating the Virtual machine for the resource we will be using "Active-Directory-Lab". Name the VM "DC-1" and set your region as the same in your your Virtual Network. For the image set it to Windows Server 2022 Datacenter: Azure Edition - x64 Gen2. For the size choose any option with two CPU's. After that we will set a username and password. Check both licensing boxes. Lastly, click next untili you land on the Networking page.    </p> 
+<p align="left "><img src="https://i.imgur.com/mEfqan0.png" height="50%" width="50%" alt="image"/> <p align=" right "><img src="https://i.imgur.com/cfVkgvL.png height="50%" width="50%" alt="image"/>
+ 
+<p>4. Set the Virtual network to "Active-Directory-VNet then review and create. </p>
+<p align="center"><img src="https://i.imgur.com/1uesmdm.png" height="50%" width="50%" alt="image"/>
 
-<p>4. From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)</p>
-
-<p>5. Create the directory C:\PHP</p>
+<p>5. Create the directory C:\PHP</p> 
 
 <p>6. From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder</p>
 
