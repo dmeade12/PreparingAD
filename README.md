@@ -14,7 +14,7 @@
 
 
 <p>1. Create a resource Group named "Active-Directory-Lab"</p>
-<p align="center"><img src="https://i.imgur.com/fRYxdUK.png> height="50%" width="50%" alt="image"/>
+<p align="center"><img src="https://i.imgur.com/EGS9GSh.png> height="50%" width="50%" alt="image"/>
 
 <p>2. Create a Virtual Network. Set the resource group to Active-Directory-Lab. Name the Virtual Network "Active-Directory-VNet" and set it to your region. Then we can review and create.</p> <p align="center"><img src="https://i.imgur.com/rK1k14D.png> height="50%" width="50%" alt="image"/>
 
@@ -24,9 +24,10 @@
 <p>4. Set the Virtual network to "Active-Directory-VNet then review and create. </p>
 <p align="center"><img src="https://i.imgur.com/1uesmdm.png" height="50%" width="50%" alt="image"/>
 
-<p>5. Create the directory C:\PHP</p> 
+<p>5.Create another VM named "Client-1" When creating the Virtual machine for the resource we will be using "Active-Directory-Lab". Name the VM "DC-1" and set your region as the same in your your Virtual Network. For the image set it to Windows 11 Pro version 24H2 - x64 Gen2
+ For the size choose any option with two CPU's. After that we will set a username and password. Check both licensing boxes. Lastly review and create.</p> <p align="center"><img src="https://i.imgur.com/bISQ2Al.png" height="50%" width="50%" alt="image"/>
 
-<p>6. From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder</p>
+<p>6.Go to Virutal Machines, set Domain Controller's NIC Private IP address to be static.To do this click on "DC-1">Go to Network Settings>Click Newtork interface / IP configuration>Go to ipconfig1>Set Private IP address settings to static and save.</p>  <p align="left"><img src="https://i.imgur.com/n3KFWkW.png" height="50%" width="50%" alt="image"/> <p align=" right "><img src="https://i.imgur.com/IlQbOxs.png height="50%" width="50%" alt="image"/>
 
 <p>7. From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.</p>
 
