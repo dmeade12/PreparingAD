@@ -29,12 +29,11 @@
 
 <p>6.Go to Virutal Machines, set Domain Controller's NIC Private IP address to be static.To do this click on "DC-1">Go to Network Settings>Click Newtork interface / IP configuration>Go to ipconfig1>Set Private IP address settings to static and save.</p>  <p align="left"><img src="https://i.imgur.com/n3KFWkW.png" height="50%" width="50%" alt="image"/> <p align=" right "><img src="https://i.imgur.com/IlQbOxs.png height="50%" width="50%" alt="image"/>
 
-<p>7. From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.</p>
+<p>7. Go To Virtual Machines>Copy "DC-1" public adress</p> <p align="center"><img src="https://i.imgur.com/8l253TK.png  height="50%" width="50%" alt="image"/>
 
-<p>8. From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi). And for the setup, select Typical Setup then Launch Configuration Wizard (after install) > Standard Configuration > Username: root & Password: root.</p>
+<p>8. For Mac user go to Microsoft Remote Desktop and for Window users go to remote desktop and sign in. <p align="center"><img src="https://i.imgur.com/pfnLsIm.png" height="50%" width="50%" alt="image"/></p> 
 
-<p>9. Open IIS as an Admin and Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)</p>
-<p align="center"><img src="https://i.imgur.com/t5W1j1M.png" height="50%" width="50%" alt="image"/>
+<p>9. Once inside the Domain Controller right click the start menu>click "run">Type "WF.MSC">Click "Windows Defender Firewall Properties">Firewall State:Turn Off and apply. </p <p align="center"><img src="https://i.imgur.com/z71bTbv.png" height="50%" width="50%" alt="image"/></p> 
 
 <p>10. Reload IIS (Open IIS, Stop and Start the server)</p>
 
