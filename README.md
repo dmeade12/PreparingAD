@@ -33,11 +33,11 @@
 
 <p>8. For Mac user go to Microsoft Remote Desktop and for Window users go to remote desktop and sign in. <p align="center"><img src="https://i.imgur.com/pfnLsIm.png" height="50%" width="50%" alt="image"/></p> 
 
-<p>9. Once inside the Domain Controller right click the start menu>click "run">Type "WF.MSC">Click "Windows Defender Firewall Properties">Firewall State:Turn Off and apply. </p <p align="center"><img src="https://i.imgur.com/z71bTbv.png" height="50%" width="50%" alt="image"/></p> 
+<p>9. Once inside the Domain Controller right click the start menu>click "run">Type "WF.MSC">Click "Windows Defender Firewall Properties">Firewall State:Turn Off and apply.(This is step is only needed for practice purposes this is not a good idea in the work enviroment) </p <p align="center"><img src="https://i.imgur.com/z71bTbv.png" height="50%" width="50%" alt="image"/></p> 
 
-<p>10. Reload IIS (Open IIS, Stop and Start the server)</p>
+<p>10.Go back to Azure on your main device and copy the Private IP Address of "DC-1"</p>
 
-<p>11. Install osTicket v1.15.8 - From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”. Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”</p>
+<p>11. Go to"Client-1">Network settings>Click on your Network interface/IP configuration(Client-1286)>DNS serversCustom and paste the IP adress of "DC-1"and save.</p> </p <p align="center"><img src="https://i.imgur.com/4f99lHP.png" height="50%" width="50%" alt="image"/></p> 
 
 <p>12. Reload IIS (Open IIS, Stop and Start the server), Then Go to sites > Default > osTicketOn the right, click “Browse *:80”</p>
 
