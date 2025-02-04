@@ -39,14 +39,15 @@
 
 <p>11. Go to"Client-1">Network settings>Click on your Network interface/IP configuration(Client-1286)>DNS serversCustom and paste the IP adress of "DC-1"and save.</p> </p <p align="center"><img src="https://i.imgur.com/4f99lHP.png" height="50%" width="50%" alt="image"/></p> 
 
-<p>12. Reload IIS (Open IIS, Stop and Start the server), Then Go to sites > Default > osTicketOn the right, click “Browse *:80”</p>
+<p>12. Log into "Client 1" ping DC-1's private IP address(To ensure everything was setup correctly)</p>
 
-<p>13. Note that some extensions are not enabled, Go back to IIS, sites > Default > osTicket
-<p>Double-click PHP Manager</p>
-<p>Click “Enable or disable an extension”</p>
-<p>Enable: php_imap.dll</p>
+<p>13.Lets Ping DC-1's private IP address(To ensure everything was setup correctly)
+<p>Copy the the IP Private address from "DC-1"</p>
+<p>Click start or use the windows key to search Powershell</p>
+<p>Type the Command Ping 10.0.0.4(You will paste your IP address after Ping) then hit enter</p>  </p <p align="center"><img src="https://i.imgur.com/4f99lHP.png" height="50%" width="50%" alt="image"/></p> 
+
 <p>Enable: php_intl.dll</p>
-<p>Enable: php_opcache.dll</p>
+<p>Enable: php_opcache.dll</p> 
 <p>Refresh the osTicket site in your browser, observe the changes</p>
 </p>
 
