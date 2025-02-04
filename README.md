@@ -44,35 +44,13 @@
 <p>13.Lets Ping DC-1's private IP address(To ensure everything was setup correctly)
 <p>Copy the the IP Private address from "DC-1"</p>
 <p>Click start or use the windows key to search Powershell</p>
-<p>Type the Command Ping 10.0.0.4(You will paste your IP address after Ping) then hit enter</p>  </p <p align="center"><img src="https://i.imgur.com/4f99lHP.png" height="50%" width="50%" alt="image"/></p> 
+<p>Type the Command Ping 10.0.0.4(You will paste your IP address after Ping) then hit enter</p> <p align="center"><img src="https://i.imgur.com/1uesmdm.png" height="50%" width="50%" alt="image"/>
 
-<p>Enable: php_intl.dll</p>
-<p>Enable: php_opcache.dll</p> 
-<p>Refresh the osTicket site in your browser, observe the changes</p>
-</p>
+<p>14. Type the command  "ipconfig /all"(The output for the DNS settings should show DC-1’s private IP Address
+)</p> <p align="center"><img src="https://i.imgur.com/qgWvTDt.png" height="50%" width="50%" alt="image"/>
 
-<p>14. Rename: ost-config.php - From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php > To: C:\inetpub\wwwroot\osTicket\include\ost-config.php</p>
+<p>15. Great Job, you setup your own AD Infrastructure in Azure!</p>
 
-<p>15. Assign Permissions: ost-config.php, Disable inheritance > Remove All. then add New Permissions > Everyone > All</p>
 
-<p>16. Continue Setting up osTicket in the browser (click Continue). Name: Helpdesk. Default email (receives email from customers)</p>
 
-<p>17. From the “osTicket-Installation-Files” folder, install HeidiSQL. Open Heidi SQL. Then Create a new session, Input username and password: root/root. Then connect to the session and Create a database called “osTicket”</p>
-<p align="center"><img src="https://i.imgur.com/i6DxKzM.png" height="50%" width="50%" alt="image"/>
-
-<p>18. Continue Setting up osTicket in the browser
-<p>MySQL Database: osTicket</p>
-<p>MySQL Username: root</p>
-<p>MySQL Password: root</p>
-<p>Click “Install Now!”</p>
-</p>
-
-<p>19. Congratulations, hopefully it is installed with no errors!
-Browse to your help desk login page: <i> http://localhost/osTicket/scp/login.php </i></p>
-<p align="center"><img src="https://i.imgur.com/u6LDs8K.png" height="50%" width="50%" alt="image"/>
-
-<p>20. End Users osTicket URL: <i>http://localhost/osTicket/<i/> </p>
-<p align="center"><img src="https://i.imgur.com/dGWkdFJ.png" height="50%" width="50%" alt="image"/>
-
-<h4>N.B: - Clean up - Delete: C:\inetpub\wwwroot\osTicket\setup. Also set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php</h4>
 
